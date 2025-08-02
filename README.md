@@ -63,11 +63,15 @@ Copy and save this password.
 
 ## 📌 Step 5: Install MySQL as a Windows Service
 
+Run this command:(after 'mysqld --initialize --console')
+
 mysqld --install MySQL
 
 ---
 
 ## ▶️ Step 6: Start the MySQL Service
+
+Run this command:(after 'mysqld --install MySQL')
 
 net start MySQL
 
