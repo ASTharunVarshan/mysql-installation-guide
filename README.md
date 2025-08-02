@@ -30,12 +30,12 @@ Create a folder at:
 
 Inside `C:/mysql`, create a file named `my.ini`  
 Paste the following content:
-
+```
 [mysqld]
 basedir=C:/mysql
 datadir=C:/mysql/data
 port=3306
-
+```
 
 ---
 
@@ -89,7 +89,7 @@ Paste the **temporary password** you copied in Step 4.
 
 Run the following SQL commands:
 
-```sql
+```
 ALTER USER 'root'@'localhost' IDENTIFIED BY '1234';
 FLUSH PRIVILEGES;
 🔁 Replace 1234 with your own strong password.
@@ -100,4 +100,4 @@ Close Command Prompt and reopen it. Then type:
 mysql -u root -p
 Now enter the password you set (1234 in this example).
 You should be logged in successfully.
-
+```
