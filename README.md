@@ -92,12 +92,13 @@ Run the following SQL commands:
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED BY '1234';
 FLUSH PRIVILEGES;
+```
 🔁 Replace 1234 with your own strong password.
 
-✅ Step 9: Test MySQL Login
+## ✅ Step 9: Test MySQL Login
 Close Command Prompt and reopen it. Then type:
 
 mysql -u root -p
 Now enter the password you set (1234 in this example).
 You should be logged in successfully.
-```
+
