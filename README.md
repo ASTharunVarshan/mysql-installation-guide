@@ -49,9 +49,9 @@ Search for `cmd`, right-click, and select:
 ## ⚙️ Step 4: Initialize MySQL Server
 
 Run this command:
-
+```
 mysqld --initialize --console
-
+```
 🔐 **Important:**  
 This will generate a temporary root password like:
 
@@ -64,23 +64,23 @@ Copy and save this password.
 ## 📌 Step 5: Install MySQL as a Windows Service
 
 Run this command:(after 'mysqld --initialize --console')
-
+```
 mysqld --install MySQL
-
+```
 ---
 
 ## ▶️ Step 6: Start the MySQL Service
 
 Run this command:(after 'mysqld --install MySQL')
-
+```
 net start MySQL
-
+```
 ---
 
 ## 🔐 Step 7: Log in Using Temporary Password
-
+```
 mysql -u root -p
-
+```
 When prompted:
 
 Enter password:
@@ -101,8 +101,9 @@ FLUSH PRIVILEGES;
 
 ## ✅ Step 9: Test MySQL Login
 Close Command Prompt and reopen it. Then type:
-
+```
 mysql -u root -p
+```
 Now enter the password you set (1234 in this example).
 You should be logged in successfully.
 
